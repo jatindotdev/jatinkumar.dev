@@ -4,7 +4,13 @@
 
 ## Development
 
-From your terminal:
+Install the dependencies:
+
+```sh
+npm run dev
+```
+
+Run a dev server:
 
 ```sh
 npm run dev
