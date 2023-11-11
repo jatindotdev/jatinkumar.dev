@@ -1,5 +1,4 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -9,20 +8,9 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import tailwind from "~/tailwind.css";
+import "~/tailwind.css";
 
 import { Nav } from "~/components/nav";
-
-export const links: LinksFunction = () => [
-  ...(cssBundleHref
-    ? [{ rel: "stylesheet", href: cssBundleHref }]
-    : [
-        {
-          rel: "stylesheet",
-          href: tailwind,
-        },
-      ]),
-];
 
 export const meta: MetaFunction = () => {
   const meta = {
