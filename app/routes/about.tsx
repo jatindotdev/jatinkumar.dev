@@ -1,5 +1,3 @@
-import { Badges } from "~/components/badges";
-
 export default function About() {
   return (
     <div className="main-wrapper">
@@ -261,11 +259,6 @@ export default function About() {
               TypeScript.
             </li>
           </ul>
-        </div>
-        <hr className="mt-m mb-xl" />
-        <h4>HackerRank</h4>
-        <div className="work-list flex flex-wrap gap-5">
-          <Badges />
         </div>
         <hr className="mt-m mb-xl" />
         <h4>About this site</h4>
