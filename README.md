@@ -5,8 +5,14 @@ jatinkumar.dev
 
 
 <p align="center">
-<img src="https://img.shields.io/github/contributors/jatindotdev/jatinkumar.dev" alt="GitHub contributors" />
-<img src="https://img.shields.io/github/discussions/jatindotdev/jatinkumar.dev" alt="GitHub discussions" />
-<img src="https://img.shields.io/github/issues/jatindotdev/jatinkumar.dev" alt="GitHub issues" />
+  
+<a href="https://github.com/jatindotdev/jatinkumar.dev/graphs/contributors">
+  <img src="https://img.shields.io/github/contributors/jatindotdev/jatinkumar.dev" alt="GitHub contributors" />
+</a>
+<a href="https://github.com/jatindotdev/jatinkumar.dev/issues">
+  <img src="https://img.shields.io/github/issues/jatindotdev/jatinkumar.dev" alt="GitHub issues" />
+</a>
+<a href="https://github.com/jatindotdev/jatinkumar.dev/pulls">
 <img src="https://img.shields.io/github/issues-pr/jatindotdev/jatinkumar.dev" alt="GitHub pull request" />
+</a>
 </p>
