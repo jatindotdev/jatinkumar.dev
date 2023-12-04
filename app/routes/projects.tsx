@@ -15,7 +15,7 @@ export const loader = async () => {
       name: "Chat App - Web",
       logo: "https://chat-withme.vercel.app/icons/apple-touch-icon.png",
       imageUrl:
-        "https://github.com/codewjatin/chat-app/raw/main/public/cover.png",
+        "https://cdn.jsdelivr.net/gh/jatindotdev/chat-app/public/cover.png",
       projectUrl: "https://chat-withme.vercel.app",
       sourceUrl: "https://github.com/codewjatin/chat-app",
       description:
@@ -23,9 +23,9 @@ export const loader = async () => {
     },
     {
       name: "Music Player - Deno",
-      logo: "https://deno.land/logo.svg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Deno.svg",
       imageUrl:
-        "https://github.com/codewjatin/deno-music-player/raw/main/assets/cover.png",
+        "https://cdn.jsdelivr.net/gh/codewjatin/deno-music-player/assets/cover.png",
       projectUrl: "https://music-player.deno.dev",
       sourceUrl: "https://github.com/codewjatin/deno-music-player",
       description:
