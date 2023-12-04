@@ -23,7 +23,7 @@ export const loader = async () => {
     },
     {
       name: "Music Player - Deno",
-      logo: "https://deno.land/logo.svg",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/8/84/Deno.svg",
       imageUrl:
         "https://cdn.jsdelivr.net/gh/codewjatin/deno-music-player/assets/cover.png",
       projectUrl: "https://music-player.deno.dev",
