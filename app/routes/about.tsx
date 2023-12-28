@@ -2,14 +2,14 @@ export default function About() {
   return (
     <div className="main-wrapper">
       <div className="container-slim mx-auto content">
-        <div className="inset-image about-cover-image mb-m">
+        {/* <div className="inset-image about-cover-image mb-m">
           <img
             height="520"
             width="880"
             src="/assets/img/about-cover.png"
             alt="Jatin"
           />
-        </div>
+        </div> */}
         <p>
           I'm Jatin and I am a student pursuing a Bachelor's degree in Computer
           Science. My specialty is in creating mobile and web-based applications
