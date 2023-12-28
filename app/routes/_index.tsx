@@ -141,20 +141,27 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <button
-            onClick={(e) => {
-              const target = e.currentTarget;
-              target.textContent = "Copied!";
-              target.disabled = true;
-              navigator.clipboard.writeText("main.jatink@gmail.com");
-              setTimeout(() => {
-                target.textContent = "Email me";
-                target.disabled = false;
-              }, 2000);
-            }}
-            className="btn">
-            Email me
-          </button>
+          <div className="space-x-2">
+            <button
+              onClick={(e) => {
+                const target = e.currentTarget;
+                target.textContent = "Copied!";
+                target.disabled = true;
+                navigator.clipboard.writeText("main.jatink@gmail.com");
+                setTimeout(() => {
+                  target.textContent = "Email me";
+                  target.disabled = false;
+                }, 2000);
+              }}
+              className="btn">
+              Email me
+            </button>
+            <a
+              href="https://cv.jatinkumar.dev"
+              className="btn" rel="noreferrer">
+              My CV
+            </a>
+          </div>
         </div>
         <hr className="mt-xxl mb-xxl" />
         <div>
