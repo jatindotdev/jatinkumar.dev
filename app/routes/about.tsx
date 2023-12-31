@@ -11,47 +11,51 @@ export default function About() {
           />
         </div> */}
         <p>
-          I'm Jatin and I am a student pursuing a Bachelor's degree in Computer
-          Science. My specialty is in creating mobile and web-based applications
-          with a strong emphasis on simplicity and usability, with a focus on
-          building interfaces for the same.
+          I'm Jatin and I am a student pursuing a Bachelor's degree in Computer Science.
+          My specialty is in creating mobile and web-based applications with a strong
+          emphasis on simplicity and usability, with a focus on building interfaces for
+          the same.
         </p>
         <p>
-          You can also find me working on my own projects: such as a{" "}
+          You can also find me working on my own projects: such as a{' '}
           <a
             href="https://github.com/codewjatin/chat-app"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             Chat App
-          </a>{" "}
-          built with HTML, CSS, and JavaScript, and a{" "}
+          </a>{' '}
+          built with HTML, CSS, and JavaScript, and a{' '}
           <a
             href="https://github.com/codewjatin/chat-app"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             Music Player
-          </a>{" "}
-          using Deno with server-side search and easy frontend integration for a
-          smooth listening experience.
+          </a>{' '}
+          using Deno with server-side search and easy frontend integration for a smooth
+          listening experience.
         </p>
         <p>
-          In my free time, I enjoy playing video games, watching sci-fi shows
-          and movies, experimenting with technology and taking pictures.
+          In my free time, I enjoy playing video games, watching sci-fi shows and movies,
+          experimenting with technology and taking pictures.
         </p>
         <p>
-          You can follow along with my work, personal projects and occasional
-          insights into my life on{" "}
+          You can follow along with my work, personal projects and occasional insights
+          into my life on{' '}
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/p__jatin">
+            href="https://twitter.com/p__jatin"
+          >
             Twitter
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://instagram.com/p__jatin">
+            href="https://instagram.com/p__jatin"
+          >
             Instagram
           </a>
           .
@@ -59,76 +63,44 @@ export default function About() {
         <hr className="mt-xl mb-m" />
         <h4>Development and Cloud</h4>
         <p className="t-stack mb-m">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://nodejs.org/en/">
+          <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/en/">
             NodeJS
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.mongodb.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.mongodb.com/">
             MongoDB
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.postgresql.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.postgresql.org/">
             PostgreSQL
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.mysql.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.mysql.com/">
             MySQL
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://expressjs.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://expressjs.com/">
             ExpressJS
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://serverless-stack.com/">
+            href="https://serverless-stack.com/"
+          >
             serverless stack
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://reactjs.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">
             ReactJS
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://remix.run/">
+          <a target="_blank" rel="noopener noreferrer" href="https://remix.run/">
             RemixJS
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://nextjs.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org/">
             NextJS
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://tailwindcss.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://tailwindcss.com/">
             Tailwind CSS
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://chakra-ui.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://chakra-ui.com/">
             ChakraUI
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://cloud.google.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/">
             GCP
           </a>
           &nbsp;and more.
@@ -138,43 +110,34 @@ export default function About() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.typescriptlang.org/">
+            href="https://www.typescriptlang.org/"
+          >
             TypeScript
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.javascript.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.javascript.com/">
             JavaScript
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.python.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.python.org/">
             Python
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.cplusplus.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.cplusplus.com/">
             C++
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://golang.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://golang.org/">
             GO
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.oracle.com/java/">
+            href="https://www.oracle.com/java/"
+          >
             Java
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">
+            href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+          >
             SQL
           </a>
           &nbsp;and more.
@@ -186,7 +149,8 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
             className="work-list-item"
-            href="https://climeclabs.com">
+            href="https://climeclabs.com"
+          >
             <span className="work-list-item-company">SRM University</span>
             <span className="work-list-item-spacer" />
             <span className="work-list-item-title">Full-Time Student</span>
@@ -204,7 +168,8 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
             className="work-list-item"
-            href="https://srmist.edu.in">
+            href="https://srmist.edu.in"
+          >
             <span className="work-list-item-company">Climec Labs</span>
             <span className="work-list-item-spacer" />
             <span className="work-list-item-title">SDE Intern</span>
@@ -212,17 +177,16 @@ export default function About() {
           </a>
           <ul>
             <li>
-              Developed a Flutter application that seamlessly integrates with
-              WiFi-enabled Air Purifiers.
+              Developed a Flutter application that seamlessly integrates with WiFi-enabled
+              Air Purifiers.
             </li>
             <li>
-              Built a Flutter app with Dart, seamlessly integrating Firebase as
-              the backend.
+              Built a Flutter app with Dart, seamlessly integrating Firebase as the
+              backend.
             </li>
             <li>
-              My contributions primarily centred on implementing device
-              connection functionality and designing the application's user
-              flow.
+              My contributions primarily centred on implementing device connection
+              functionality and designing the application's user flow.
             </li>
           </ul>
         </div>
@@ -233,7 +197,8 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
             className="work-list-item"
-            href="https://www.srmkzilla.net/">
+            href="https://www.srmkzilla.net/"
+          >
             <span className="work-list-item-company">
               SRMKZILLA (Official mozilla campus club)
             </span>
@@ -243,21 +208,17 @@ export default function About() {
           </a>
           <ul>
             <li>
-              Started as a member, went on to become a associate technical lead
-              in my second year.
+              Started as a member, went on to become a associate technical lead in my
+              second year.
             </li>
             <li>
-              Worked on many open and closed source projects in MERN stack and
-              Flutter.
+              Worked on many open and closed source projects in MERN stack and Flutter.
             </li>
             <li>
-              Created a Flutter application designed for managing event
-              check-ins and attendance.
+              Created a Flutter application designed for managing event check-ins and
+              attendance.
             </li>
-            <li>
-              Worked on the development of backend of a CMS in Node.js,
-              TypeScript.
-            </li>
+            <li>Worked on the development of backend of a CMS in Node.js, TypeScript.</li>
           </ul>
         </div>
         <hr className="mt-m mb-xl" />
@@ -265,29 +226,24 @@ export default function About() {
         <p>In case you were wondering this site is:</p>
         <ul>
           <li>
-            Designed and built on a Mac using{" "}
+            Designed and built on a Mac using{' '}
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://code.visualstudio.com/">
+              href="https://code.visualstudio.com/"
+            >
               Visual Studio Code
             </a>
           </li>
           <li>
-            Hosted and Deployed by{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://vercel.com">
+            Hosted and Deployed by{' '}
+            <a target="_blank" rel="noopener noreferrer" href="https://vercel.com">
               Vercel
             </a>
           </li>
           <li>
-            Inspired by{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://daleanthony.com">
+            Inspired by{' '}
+            <a target="_blank" rel="noopener noreferrer" href="https://daleanthony.com">
               daleanthony.com
             </a>
           </li>
