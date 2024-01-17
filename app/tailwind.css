@@ -71,8 +71,11 @@ html {
 
 *:focus {
   outline: none;
-  filter: brightness(1.5) contrast(1.2);
-  background-color: rgba(255, 255, 255, 0.1);
+}
+
+*:focus-visible {
+  outline: 2px solid rgba(246, 246, 246, 0.5);
+  outline-offset: 2px;
   border-radius: 8px;
 }
 
@@ -271,10 +274,12 @@ hr {
   align-content: stretch;
   align-items: center;
 }
+
 .external-link .icon-external-link {
   margin-left: 8px;
   opacity: 0.5;
 }
+
 .external-link:hover .icon-external-link {
   opacity: 0.9;
 }
