@@ -12,6 +12,16 @@ type Project = {
 export const loader = async () => {
   const projects: Project[] = [
     {
+      name: 'TinyBits - URL Shortener',
+      logo: '/logo.png',
+      imageUrl:
+        'https://cdn.jsdelivr.net/gh/jatindotdev/tinybits/client/public/cover.png',
+      projectUrl: 'https://tinybits.vercel.app',
+      sourceUrl: 'https://github.com/jatindotdev/tinybits',
+      description:
+        'I built a GoLang-based URL shortener with Redis caching and PostgreSQL integration, later expanding it into a full-stack application using Remix. Ongoing open-source development makes it a dynamic work in progress for our club project.',
+    },
+    {
       name: 'Chat App - Web',
       logo: 'https://chat-withme.vercel.app/icons/apple-touch-icon.png',
       imageUrl:
@@ -25,9 +35,9 @@ export const loader = async () => {
       name: 'Music Player - Deno',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Deno.svg',
       imageUrl:
-        'https://cdn.jsdelivr.net/gh/codewjatin/deno-music-player/assets/cover.png',
+        'https://cdn.jsdelivr.net/gh/jatindotdev/deno-music-player/assets/cover.png',
       projectUrl: 'https://music-player.deno.dev',
-      sourceUrl: 'https://github.com/codewjatin/deno-music-player',
+      sourceUrl: 'https://github.com/jatindotdev/deno-music-player',
       description:
         'A Deno-powered music player with server-side query search and easy frontend integration for seamless listening experience.',
     },
