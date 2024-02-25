@@ -1023,7 +1023,7 @@ body {
 .home-links-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-content: stretch;
   align-items: center;
