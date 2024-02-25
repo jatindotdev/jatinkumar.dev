@@ -1,28 +1,13 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
 	Links,
-	LiveReload,
 	Meta,
 	Outlet,
 	Scripts,
 	ScrollRestoration,
+	type MetaFunction,
 } from "@remix-run/react";
-
-import tailwind from "~/tailwind.css";
-
-import { Nav } from "~/components/nav";
-
-export const links: LinksFunction = () => [
-	...(cssBundleHref
-		? [{ rel: "stylesheet", href: cssBundleHref }]
-		: [
-				{
-					rel: "stylesheet",
-					href: tailwind,
-				},
-		  ]),
-];
+import "~/tailwind.css";
+import { Nav } from "./components/nav";
 
 export const meta: MetaFunction = () => {
 	const meta = {
@@ -103,7 +88,7 @@ export const meta: MetaFunction = () => {
 	];
 };
 
-export default function App() {
+export function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<head>
@@ -114,11 +99,14 @@ export default function App() {
 			</head>
 			<body>
 				<Nav />
-				<Outlet />
+				{children}
 				<ScrollRestoration />
 				<Scripts />
-				<LiveReload />
 			</body>
 		</html>
 	);
+}
+
+export default function App() {
+	return <Outlet />;
 }
