@@ -107,7 +107,7 @@ export default function Home() {
             can. Additionally, I prefer to keep my own projects open-sourced.
           </p>
         </div>
-        <div className="home-links-list mt-l">
+        <div className="flex flex-wrap justify-start content-start items-center mt-l sm:justify-between gap-4">
           <ul className="home-links">
             <li>
               <a
@@ -151,7 +151,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <div className="space-x-2">
+          <div className="space-x-2 flex">
             <button
               type="button"
               onClick={e => {
