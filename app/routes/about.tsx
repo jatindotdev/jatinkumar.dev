@@ -209,7 +209,7 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
             className="work-list-item"
-            href="https://climeclabs.com"
+            href="https://srmist.edu.in"
           >
             <span className="work-list-item-company">SRM University</span>
             <span className="work-list-item-spacer" />
@@ -228,7 +228,7 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
             className="work-list-item"
-            href="https://srmist.edu.in"
+            href="https://climeclabs.com"
           >
             <span className="work-list-item-company">Climec Labs</span>
             <span className="work-list-item-spacer" />
