@@ -46,7 +46,7 @@ export default function About() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/p__jatin"
+            href="https://twitter.com/whynotjatin"
           >
             Twitter
           </a>{' '}

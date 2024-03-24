@@ -112,7 +112,7 @@ export default function Home() {
             <li>
               <a
                 target="_blank"
-                href="https://twitter.com/jatindotdev"
+                href="https://twitter.com/whynotjatin"
                 title="Twitter"
                 rel="noreferrer"
               >
