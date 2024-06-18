@@ -8,6 +8,7 @@ import {
 } from '@remix-run/react';
 import '~/tailwind.css';
 import { Nav } from './components/nav';
+import { Analytics } from '@vercel/analytics/react';
 
 export const meta: MetaFunction = () => {
   const meta = {
@@ -101,6 +102,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <Nav />
         {children}
+        <Analytics />
         <ScrollRestoration />
         <Scripts />
       </body>
