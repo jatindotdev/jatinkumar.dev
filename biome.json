@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -9,8 +9,7 @@
     "enabled": false
   },
   "files": {
-    "ignoreUnknown": true,
-    "include": ["app/**/*"]
+    "include": ["src", "integrations"]
   },
   "linter": {
     "enabled": true,
@@ -31,9 +30,11 @@
       "quoteStyle": "single",
       "jsxQuoteStyle": "double",
       "quoteProperties": "asNeeded",
-      "trailingComma": "es5",
+      "trailingCommas": "es5",
       "semicolons": "always",
       "arrowParentheses": "asNeeded",
+      "indentWidth": 2,
+      "indentStyle": "space",
       "bracketSpacing": true,
       "bracketSameLine": false
     }

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "tinybits",
+    "description": "A URL shortener powered by Golang and Remix for efficient link management.",
+    "repository": "jatindotdev/tinybits"
+  },
+  {
+    "name": "express-drizzle-postgres-starter",
+    "description": "A opinionated starter template for building REST APIs.",
+    "repository": "jatindotdev/express-drizzle-postgres-starter"
+  },
+  {
+    "name": "cli",
+    "description": "CLI utilites and scripts that help me with my daily tasks written in Rust and Go.",
+    "repository": "jatindotdev/cli"
+  }
+]
