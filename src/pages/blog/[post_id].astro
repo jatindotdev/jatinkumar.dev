@@ -20,13 +20,13 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title} description={post.data.description} ogId={post.id}>
-	<h1 class="text-4xl font-semibold">{post.data.title}</h1>
-	<p class="mt-4 text-lg text-zinc-450">
-		{formatDate(post.data.date)}
-	</p>
-	<div id="md" class="mt-12 leading-relaxed">
-		<Content />
-	</div>
+  <h1 class="text-4xl font-semibold">{post.data.title}</h1>
+  <p class="mt-4 text-lg text-zinc-450">
+    {formatDate(post.data.date)}
+  </p>
+  <div id="md" class="mt-12 leading-relaxed">
+    <Content />
+  </div>
 </Layout>
 
 <style lang="postcss">
@@ -39,7 +39,7 @@ const { Content } = await post.render();
     :global(#md h4) {
         @apply mt-6 text-xl font-medium;
     }
-	:global(#md h5) {
+  :global(#md h5) {
         @apply mt-4 text-lg font-medium;
     }
     :global(#md > p) {
@@ -48,7 +48,7 @@ const { Content } = await post.render();
     :global(#md ol) {
         @apply mt-4 list-decimal list-inside;
     }
-	:global(#md ul) {
+  :global(#md ul) {
         @apply mt-4 list-disc list-inside ;
     }
     :global(#md blockquote) {
@@ -58,39 +58,39 @@ const { Content } = await post.render();
         @apply text-main underline hover:text-black;
     }
     :global(#md p code, #md ul code, #md ol code) {
-		@apply text-base;
-	}
-	:global(#md table code) {
-		@apply text-sm;
-	}
-	:global(#md .astro-code) {
-		@apply !bg-zinc-80 mt-4 overflow-scroll rounded-lg px-4 py-3 !leading-tight;
-		scrollbar-width: none;
-	}
-	:global(#md .astro-code span) {
-		@apply !text-code-sm;
-	}
-	:global(#md pre::-webkit-scrollbar) {
-		display: none;
-	}
+    @apply text-base;
+  }
+  :global(#md table code) {
+    @apply text-sm;
+  }
+  :global(#md .astro-code) {
+    @apply !bg-zinc-80 mt-4 overflow-scroll rounded-lg px-4 py-3 !leading-tight;
+    scrollbar-width: none;
+  }
+  :global(#md .astro-code span) {
+    @apply !text-code-sm;
+  }
+  :global(#md pre::-webkit-scrollbar) {
+    display: none;
+  }
     :global(#md table) {
-		@apply mt-6 mb-2 w-full table-auto border-collapse text-left text-sm;
-	}
-	:global(#md .table-wrapper) {
-		@apply w-full overflow-auto whitespace-nowrap;
-	}
-	:global(#md td) {
-		@apply border-b border-zinc-200 py-1.5 px-1;
-	}
-	:global(#md table th) {
-		@apply text-xs font-medium py-1.5 px-1 border-b border-zinc-400;
-	}
-	:global(#md p > code) {
-		@apply text-sm;
-	}
-	:root {
-		--astro-code-color-background: rgb(246, 246, 246);
-		--astro-code-token-string-expression: rgb(97, 97 ,255);
-		--astro-code-token-comment: rgb(157, 157, 157);
-	}
+    @apply mt-6 mb-2 w-full table-auto border-collapse text-left text-sm;
+  }
+  :global(#md .table-wrapper) {
+    @apply w-full overflow-auto whitespace-nowrap;
+  }
+  :global(#md td) {
+    @apply border-b border-zinc-200 py-1.5 px-1;
+  }
+  :global(#md table th) {
+    @apply text-xs font-medium py-1.5 px-1 border-b border-zinc-400;
+  }
+  :global(#md p > code) {
+    @apply text-sm;
+  }
+  :root {
+    --astro-code-color-background: rgb(246, 246, 246);
+    --astro-code-token-string-expression: rgb(97, 97 ,255);
+    --astro-code-token-comment: rgb(157, 157, 157);
+  }
 </style>

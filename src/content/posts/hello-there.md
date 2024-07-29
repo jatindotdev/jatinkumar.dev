@@ -9,9 +9,9 @@ I'm Jatin, and I'm a software engineer. I love to code and write about it. I'm a
 
 ```ts
 class Hello {
-	constructor() {
-		console.log('Hello, there!');
-	}
+  constructor() {
+    console.log('Hello, there!');
+  }
 }
 
 // ^_^
