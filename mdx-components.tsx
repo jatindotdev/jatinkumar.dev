@@ -16,7 +16,13 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     }) => {
       return (
         <figure>
-          <img src={src} alt={alt} className="rounded-xl" />
+          <img
+            src={src}
+            alt={alt}
+            className="rounded-xl"
+            height="342"
+            width="608"
+          />
           <figcaption className="text-center">{caption}</figcaption>
         </figure>
       )
@@ -36,7 +42,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           className={cn(
             'relative rounded-t-none rounded-b-lg border border-zinc-200 bg-transparent px-0 py-4 text-zinc-900 dark:border-zinc-800 dark:text-[#abb2bf]',
             {
-              'rounded-t-lg': props['data-language'] === undefined,
+              'rounded-t-lg px-4': props['data-language'] === undefined,
             },
           )}
           {...props}
