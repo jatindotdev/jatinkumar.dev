@@ -19,9 +19,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           <img
             src={src}
             alt={alt}
-            className="rounded-xl"
-            height="342"
-            width="608"
+            className="rounded-xl bg-zinc-100 object-cover dark:bg-zinc-800/10"
+            height={356}
+            width={608}
+            loading="lazy"
           />
           <figcaption className="text-center">{caption}</figcaption>
         </figure>
