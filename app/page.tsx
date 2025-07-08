@@ -52,6 +52,7 @@ function ProjectDemo({ src, isVideo = false }: ProjectDemoProps) {
         ) : (
           <img
             src={src}
+            alt={"Project demo screenshot"}
             className="aspect-video w-full cursor-zoom-in rounded-xl"
           />
         )}
