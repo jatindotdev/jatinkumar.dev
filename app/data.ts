@@ -70,7 +70,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     points: [
       'Engineered a **React Native app** for **construction management**, automating **material tracking and ledger updates** to save contractors hours of manual work.',
       'Developed services for **real-time extraction and processing** of receipts and documents.',
-      'Built a **cost-effective serverless architecture** using **AWS Lamdas**, reducing infrastructure costs while maintaining scalability and high availability for real-time data processing.',
+      'Built a **cost-effective serverless architecture** using **AWS Lambdas**, reducing infrastructure costs while maintaining scalability and high availability for real-time data processing.',
     ],
     id: 'emendoai',
   },
