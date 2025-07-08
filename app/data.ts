@@ -51,15 +51,26 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
+    company: 'Headout',
+    title: 'Software Engineer Intern',
+    start: 'May 2025',
+    end: 'Present',
+    link: 'https://headout.com',
+    points: [
+      'At Headout’s Hub POD, Contributing to **Hub — the listing and management dashboard for experiences** — and **Creators — the platform for our Travel Creator Program**.',
+    ],
+    id: 'headout',
+  },
+  {
     company: 'EmendoAI (US)',
     title: 'Software Development Engineer',
     start: 'April 2024',
-    end: 'Present',
+    end: 'May 2025',
     link: 'https://emendo.ai',
     points: [
-      'Engineering a **React Native** app for construction management, automating material tracking and ledger updates to save contractors **hours** of manual work.',
-      'Developing services for **real-time** extraction and processing of receipts and documents, enhancing workflow efficiency.',
-      'We are designing cost-effective **serverless architecture** using **AWS CDK**, reducing infrastructure costs while maintaining **scalability** and **high availability** for real-time data processing.',
+      'Engineered a **React Native app** for **construction management**, automating **material tracking and ledger updates** to save contractors hours of manual work.',
+      'Developed services for **real-time extraction and processing** of receipts and documents.',
+      'Built a **cost-effective serverless architecture** using **AWS Lamdas**, reducing infrastructure costs while maintaining scalability and high availability for real-time data processing.',
     ],
     id: 'emendoai',
   },

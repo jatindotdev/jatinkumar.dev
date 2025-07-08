@@ -8,6 +8,11 @@ import {
   MorphingDialogContent,
   MorphingDialogTrigger,
 } from '@/components/ui/morphing-dialog'
+import {
+  TRANSITION_SECTION,
+  VARIANTS_CONTAINER,
+  VARIANTS_SECTION,
+} from '@/lib/constants'
 import { formatText } from '@/lib/jsx-utils'
 import { XIcon } from 'lucide-react'
 import { motion } from 'motion/react'
@@ -20,11 +25,6 @@ import {
   SOCIAL_LINKS,
   WORK_EXPERIENCE,
 } from './data'
-import {
-  TRANSITION_SECTION,
-  VARIANTS_CONTAINER,
-  VARIANTS_SECTION,
-} from '@/lib/constants'
 
 type ProjectDemoProps = {
   src: string
@@ -50,7 +50,10 @@ function ProjectDemo({ src, isVideo = false }: ProjectDemoProps) {
             className="aspect-video w-full cursor-zoom-in rounded-xl"
           />
         ) : (
-          <img src={src} className="w-full rounded-xl" />
+          <img
+            src={src}
+            className="aspect-video w-full cursor-zoom-in rounded-xl"
+          />
         )}
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -66,7 +69,7 @@ function ProjectDemo({ src, isVideo = false }: ProjectDemoProps) {
           ) : (
             <img
               src={src}
-              className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+              className="aspect-video w-full rounded-xl sm:h-[50vh] lg:h-[70vh]"
             />
           )}
         </MorphingDialogContent>
