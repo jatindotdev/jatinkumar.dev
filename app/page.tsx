@@ -8,6 +8,7 @@ import {
   MorphingDialogContent,
   MorphingDialogTrigger,
 } from '@/components/ui/morphing-dialog'
+import { FlipText } from '@/components/ui/text-flip'
 import {
   TRANSITION_SECTION,
   VARIANTS_CONTAINER,
@@ -17,6 +18,7 @@ import { formatText } from '@/lib/jsx-utils'
 import { XIcon } from 'lucide-react'
 import { motion } from 'motion/react'
 import Link from 'next/link'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import {
   BLOG_POSTS,
   DESCRIPTION,
@@ -52,7 +54,7 @@ function ProjectDemo({ src, isVideo = false }: ProjectDemoProps) {
         ) : (
           <img
             src={src}
-            alt={"Project demo screenshot"}
+            alt={'Project demo screenshot'}
             className="aspect-video w-full cursor-zoom-in rounded-xl"
           />
         )}
@@ -157,41 +159,7 @@ export default function Personal() {
         </h3>
         <div className="flex flex-col space-y-4">
           {WORK_EXPERIENCE.map((job) => (
-            <div
-              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
-              key={job.id}
-            >
-              <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
-                <div className="relative flex w-full flex-row justify-between">
-                  <div>
-                    <h4 className="font-normal dark:text-zinc-100">
-                      {job.title}
-                    </h4>
-                    <a
-                      href={job.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-zinc-500 dark:text-zinc-400"
-                    >
-                      {job.company}
-                    </a>
-                  </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
-                    {job.start} - {job.end}
-                  </p>
-                </div>
-                <ol className="list-outside list-disc space-y-1 pl-4 break-words not-empty:mt-2">
-                  {job.points?.map((point) => (
-                    <li
-                      key={point}
-                      className="text-zinc-600 dark:text-zinc-400"
-                    >
-                      {formatText(point)}
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            </div>
+            <JobCard key={job.id} job={job} />
           ))}
         </div>
       </motion.section>
@@ -283,5 +251,95 @@ export default function Personal() {
         </div>
       </motion.section>
     </motion.main>
+  )
+}
+
+type JobCardProps = {
+  job: {
+    id: string
+    title: string
+    company: string
+    link: string
+    start: string
+    end: string
+    points?: string[]
+  }
+}
+
+function JobCard({ job }: JobCardProps) {
+  const cardRef = useRef<HTMLDivElement | null>(null)
+  const [hoverActive, setHoverActive] = useState(false)
+
+  useEffect(() => {
+    const ref = cardRef.current
+    const handleMouseEnter = () => {
+      setHoverActive(true)
+    }
+
+    const handleMouseLeave = () => {
+      setHoverActive(false)
+    }
+
+    ref?.addEventListener('mouseenter', handleMouseEnter)
+    ref?.addEventListener('mouseleave', handleMouseLeave)
+    return () => {
+      ref?.removeEventListener('mouseenter', handleMouseEnter)
+      ref?.removeEventListener('mouseleave', handleMouseLeave)
+    }
+  }, [job.company])
+
+  const durationString = useMemo(() => {
+    const startDate = new Date(job.start)
+    const endDate =
+      job.end.toLowerCase() === 'present' ? new Date() : new Date(job.end)
+    const diffInMonths =
+      (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+      (endDate.getMonth() - startDate.getMonth())
+    const years = Math.floor(diffInMonths / 12)
+    const months = diffInMonths % 12
+    return `${years > 0 ? `${years} year${years > 1 ? 's' : ''} ` : ''}${
+      months > 0 ? `${months} month${months > 1 ? 's' : ''}` : ''
+    }`.trim()
+  }, [job.start, job.end])
+
+  return (
+    <div
+      className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
+      key={job.id}
+      ref={cardRef}
+    >
+      <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
+        <div className="relative flex w-full flex-row justify-between">
+          <div>
+            <h4 className="font-normal dark:text-zinc-100">{job.title}</h4>
+            <a
+              href={job.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 dark:text-zinc-400"
+            >
+              {job.company}
+            </a>
+          </div>
+          <FlipText
+            className="text-zinc-600 dark:text-zinc-400"
+            mode="wait"
+            flip={hoverActive}
+          >
+            <span>
+              {job.start} - {job.end}
+            </span>
+            <span>{durationString}</span>
+          </FlipText>
+        </div>
+        <ol className="list-outside list-disc space-y-1 pl-4 break-words not-empty:mt-2">
+          {job.points?.map((point) => (
+            <li key={point} className="text-zinc-600 dark:text-zinc-400">
+              {formatText(point)}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
   )
 }
